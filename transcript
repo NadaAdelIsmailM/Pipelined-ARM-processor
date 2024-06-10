@@ -1,0 +1,382 @@
+# Compile of Mux.sv was successful.
+# Compile of FlipFlops.sv was successful.
+# Compile of ARM.sv was successful.
+# Compile of DataPath.sv was successful.
+# Compile of Register_file.sv was successful.
+# Compile of Extender.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of CondCheck.sv was successful.
+# Compile of Controller.sv was successful.
+# Compile of Hazard Unit.sv was successful.
+# Compile of imem&dmem.sv was successful.
+# Compile of Top.sv was successful.
+# Compile of TestBench.sv was successful.
+# 13 compiles, 0 failed with no errors.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 10:39:58 on Jan 12,2023
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.ARM
+# Loading work.Controller
+# Loading work.flop_with_en_r_c
+# Loading work.flop_with_r
+# Loading work.CondCheck
+# Loading work.DataPath
+# Loading work.mux2
+# Loading work.flipflop_with_en_r
+# Loading work.Adder
+# Loading work.RegisterFile
+# Loading work.Extender
+# Loading work.flipflop_with_r
+# Loading work.mux4
+# Loading work.ALU
+# Loading work.IsEqual
+# Loading work.Hazard
+# Loading work.imem
+# Loading work.dmem
+add wave -position insertpoint  \
+sim:/testbench/dut/WriteDataM \
+sim:/testbench/dut/reset \
+sim:/testbench/dut/ReadDataM \
+sim:/testbench/dut/PCF \
+sim:/testbench/dut/MemWriteM \
+sim:/testbench/dut/InstrF \
+sim:/testbench/dut/DataAdrM \
+sim:/testbench/dut/clk
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/WriteDataM \
+sim:/testbench/dut/myarm/StallF \
+sim:/testbench/dut/myarm/StallD \
+sim:/testbench/dut/myarm/RegWriteW \
+sim:/testbench/dut/myarm/RegWriteM \
+sim:/testbench/dut/myarm/RegSrcD \
+sim:/testbench/dut/myarm/ReadDataM \
+sim:/testbench/dut/myarm/r \
+sim:/testbench/dut/myarm/PCWrPendingF \
+sim:/testbench/dut/myarm/PCSrcW \
+sim:/testbench/dut/myarm/PCF \
+sim:/testbench/dut/myarm/MemWriteM \
+sim:/testbench/dut/myarm/MemtoRegW \
+sim:/testbench/dut/myarm/MemtoRegE \
+sim:/testbench/dut/myarm/Match_12D_E \
+sim:/testbench/dut/myarm/Match_2E_W \
+sim:/testbench/dut/myarm/Match_2E_M \
+sim:/testbench/dut/myarm/Match_1E_W \
+sim:/testbench/dut/myarm/Match_1E_M \
+sim:/testbench/dut/myarm/InstrF \
+sim:/testbench/dut/myarm/InstrD \
+sim:/testbench/dut/myarm/ImmSrcD \
+sim:/testbench/dut/myarm/ForwardBE \
+sim:/testbench/dut/myarm/ForwardAE \
+sim:/testbench/dut/myarm/FlushE \
+sim:/testbench/dut/myarm/FlushD \
+sim:/testbench/dut/myarm/clk \
+sim:/testbench/dut/myarm/BranchTakenE \
+sim:/testbench/dut/myarm/ALUSrcE \
+sim:/testbench/dut/myarm/ALUOutM \
+sim:/testbench/dut/myarm/ALUFlagsE \
+sim:/testbench/dut/myarm/ALUControlE
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/clk
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/PCF
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/RA1D
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/RA2D
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/ALUOutM
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/ALUControlE
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/BranchTakenE
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/ALUFlagsE
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/ForwardAE
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/ForwardBE
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/StallF
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/StallD
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/FlushD
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/StallF
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/StallD
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/FlushD
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/FlushE
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/PCSrcW
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/MemtoRegW
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/WriteDataM
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/ReadDataM
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/ALUOutW
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/ALUResultE
+run
+run
+run
+# Break key hit
+run
+# Compile of Mux.sv was successful.
+# Compile of FlipFlops.sv was successful.
+# Compile of ARM.sv was successful.
+# Compile of DataPath.sv was successful.
+# Compile of Register_file.sv was successful.
+# Compile of Extender.sv was successful.
+# Compile of ALU.sv was successful.
+# Compile of CondCheck.sv was successful.
+# Compile of Controller.sv was successful.
+# Compile of Hazard Unit.sv was successful.
+# Compile of imem&dmem.sv was successful.
+# Compile of Top.sv was successful.
+# Compile of TestBench.sv was successful.
+# 13 compiles, 0 failed with no errors.
+vsim -gui work.testbench
+# End time: 10:54:30 on Jan 12,2023, Elapsed time: 0:14:32
+# Errors: 0, Warnings: 3
+# vsim -gui work.testbench 
+# Start time: 10:54:30 on Jan 12,2023
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.ARM
+# Loading work.Controller
+# Loading work.flop_with_en_r_c
+# Loading work.flop_with_r
+# Loading work.CondCheck
+# Loading work.DataPath
+# Loading work.mux2
+# Loading work.flipflop_with_en_r
+# Loading work.Adder
+# Loading work.RegisterFile
+# Loading work.Extender
+# Loading work.flipflop_with_r
+# Loading work.mux4
+# Loading work.ALU
+# Loading work.IsEqual
+# Loading work.Hazard
+# Loading work.imem
+# Loading work.dmem
+add wave -position insertpoint  \
+sim:/testbench/dut/WriteDataM \
+sim:/testbench/dut/reset \
+sim:/testbench/dut/ReadDataM \
+sim:/testbench/dut/PCF \
+sim:/testbench/dut/MemWriteM \
+sim:/testbench/dut/InstrF \
+sim:/testbench/dut/DataAdrM \
+sim:/testbench/dut/clk
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/WriteDataM \
+sim:/testbench/dut/myarm/StallF \
+sim:/testbench/dut/myarm/StallD \
+sim:/testbench/dut/myarm/RegWriteW \
+sim:/testbench/dut/myarm/RegWriteM \
+sim:/testbench/dut/myarm/RegSrcD \
+sim:/testbench/dut/myarm/ReadDataM \
+sim:/testbench/dut/myarm/r \
+sim:/testbench/dut/myarm/PCWrPendingF \
+sim:/testbench/dut/myarm/PCSrcW \
+sim:/testbench/dut/myarm/PCF \
+sim:/testbench/dut/myarm/MemWriteM \
+sim:/testbench/dut/myarm/MemtoRegW \
+sim:/testbench/dut/myarm/MemtoRegE \
+sim:/testbench/dut/myarm/Match_12D_E \
+sim:/testbench/dut/myarm/Match_2E_W \
+sim:/testbench/dut/myarm/Match_2E_M \
+sim:/testbench/dut/myarm/Match_1E_W \
+sim:/testbench/dut/myarm/Match_1E_M \
+sim:/testbench/dut/myarm/InstrF \
+sim:/testbench/dut/myarm/InstrD \
+sim:/testbench/dut/myarm/ImmSrcD \
+sim:/testbench/dut/myarm/ForwardBE \
+sim:/testbench/dut/myarm/ForwardAE \
+sim:/testbench/dut/myarm/FlushE \
+sim:/testbench/dut/myarm/FlushD \
+sim:/testbench/dut/myarm/clk \
+sim:/testbench/dut/myarm/BranchTakenE \
+sim:/testbench/dut/myarm/ALUSrcE \
+sim:/testbench/dut/myarm/ALUOutM \
+sim:/testbench/dut/myarm/ALUFlagsE \
+sim:/testbench/dut/myarm/ALUControlE
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/clk
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/PCF
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/RA1D
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/RA2D
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/ALUOutM
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/ALUControlE
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/BranchTakenE
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/ALUFlagsE
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/ForwardAE
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/ForwardBE
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/StallF
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/StallD
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/FlushD
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/StallF
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/StallD
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/FlushD
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/FlushE
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/PCSrcW
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/MemtoRegW
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/WriteDataM
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/ReadDataM
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/ALUOutW
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/ALUResultE
+run -all
+quit -sim
+# End time: 10:56:33 on Jan 12,2023, Elapsed time: 0:02:03
+# Errors: 0, Warnings: 1
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 10:56:47 on Jan 12,2023
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.ARM
+# Loading work.Controller
+# Loading work.flop_with_en_r_c
+# Loading work.flop_with_r
+# Loading work.CondCheck
+# Loading work.DataPath
+# Loading work.mux2
+# Loading work.flipflop_with_en_r
+# Loading work.Adder
+# Loading work.RegisterFile
+# Loading work.Extender
+# Loading work.flipflop_with_r
+# Loading work.mux4
+# Loading work.ALU
+# Loading work.IsEqual
+# Loading work.Hazard
+# Loading work.imem
+# Loading work.dmem
+dd wave -position insertpoint  \
+sim:/testbench/dut/WriteDataM \
+sim:/testbench/dut/reset \
+sim:/testbench/dut/ReadDataM \
+sim:/testbench/dut/PCF \
+sim:/testbench/dut/MemWriteM \
+sim:/testbench/dut/InstrF \
+sim:/testbench/dut/DataAdrM \
+sim:/testbench/dut/clk
+# invalid command name "dd"
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/WriteDataM \
+sim:/testbench/dut/myarm/StallF \
+sim:/testbench/dut/myarm/StallD \
+sim:/testbench/dut/myarm/RegWriteW \
+sim:/testbench/dut/myarm/RegWriteM \
+sim:/testbench/dut/myarm/RegSrcD \
+sim:/testbench/dut/myarm/ReadDataM \
+sim:/testbench/dut/myarm/r \
+sim:/testbench/dut/myarm/PCWrPendingF \
+sim:/testbench/dut/myarm/PCSrcW \
+sim:/testbench/dut/myarm/PCF \
+sim:/testbench/dut/myarm/MemWriteM \
+sim:/testbench/dut/myarm/MemtoRegW \
+sim:/testbench/dut/myarm/MemtoRegE \
+sim:/testbench/dut/myarm/Match_12D_E \
+sim:/testbench/dut/myarm/Match_2E_W \
+sim:/testbench/dut/myarm/Match_2E_M \
+sim:/testbench/dut/myarm/Match_1E_W \
+sim:/testbench/dut/myarm/Match_1E_M \
+sim:/testbench/dut/myarm/InstrF \
+sim:/testbench/dut/myarm/InstrD \
+sim:/testbench/dut/myarm/ImmSrcD \
+sim:/testbench/dut/myarm/ForwardBE \
+sim:/testbench/dut/myarm/ForwardAE \
+sim:/testbench/dut/myarm/FlushE \
+sim:/testbench/dut/myarm/FlushD \
+sim:/testbench/dut/myarm/clk \
+sim:/testbench/dut/myarm/BranchTakenE \
+sim:/testbench/dut/myarm/ALUSrcE \
+sim:/testbench/dut/myarm/ALUOutM \
+sim:/testbench/dut/myarm/ALUFlagsE \
+sim:/testbench/dut/myarm/ALUControlE
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/clk
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/PCF
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/RA1D
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/RA2D
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/ALUOutM
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/ALUControlE
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/BranchTakenE
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/ALUFlagsE
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/ForwardAE
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/ForwardBE
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/StallF
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/StallD
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/FlushD
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/StallF
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/StallD
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/FlushD
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/FlushE
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/PCSrcW
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/MemtoRegW
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/WriteDataM
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/ReadDataM
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/ALUOutW
+add wave -position insertpoint  \
+sim:/testbench/dut/myarm/mydp/ALUResultE
+run
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# End time: 11:00:18 on Jan 12,2023, Elapsed time: 0:03:31
+# Errors: 0, Warnings: 1
